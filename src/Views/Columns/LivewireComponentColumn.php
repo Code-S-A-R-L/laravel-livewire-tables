@@ -47,7 +47,7 @@ class LivewireComponentColumn extends Column
         })->implode(' ');
 
         return new HtmlString(Blade::render(
-            '<livewire:dynamic-component :component="$component" '.$implodedAttributes.' :wire:key="'.$row->{$row->getKeyName()}.'" />',
+            '<livewire:dynamic-component :component="$component" '.$implodedAttributes.' wire:key="'.$row->{$row->getKeyName()}.$this->getFrom().'" />',
             [
                 'component' => $this->livewireComponent,
                 ...$attributes,
