@@ -16,7 +16,7 @@ class LaravelLivewireTablesServiceProvider extends ServiceProvider
 
         if (class_exists(AboutCommand::class) && class_exists(\Composer\InstalledVersions::class)) {
             AboutCommand::add('Rappasoft Laravel Livewire Tables', [
-                'Version' => \Composer\InstalledVersions::getPrettyVersion('rappasoft/laravel-livewire-tables'),
+                'Version' => \Composer\InstalledVersions::getPrettyVersion('code-s-a-r-l/laravel-livewire-tables'),
             ]);
         }
 

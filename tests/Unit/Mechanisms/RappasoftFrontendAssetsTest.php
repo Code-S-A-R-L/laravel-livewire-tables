@@ -132,7 +132,7 @@ class RappasoftFrontendAssetsTest extends TestCase
 
         $this->assertFalse($assets->hasRenderedRappsoftTableStyles);
 
-        $this->assertStringStartsWith('<link href="/rappasoft/laravel-livewire-tables/core.min.css" rel="stylesheet" />', ltrim($assets->tableStyles()));
+        $this->assertStringStartsWith('<link href="/code-s-a-r-l/laravel-livewire-tables/core.min.css" rel="stylesheet" />', ltrim($assets->tableStyles()));
 
         $this->assertTrue($assets->hasRenderedRappsoftTableStyles);
     }
@@ -154,7 +154,7 @@ class RappasoftFrontendAssetsTest extends TestCase
 
         $this->assertFalse($assets->hasRenderedRappsoftTableThirdPartyStyles);
 
-        $this->assertStringStartsWith('<link href="/rappasoft/laravel-livewire-tables/thirdparty.css" rel="stylesheet" />', ltrim($assets->tableThirdPartyStyles()));
+        $this->assertStringStartsWith('<link href="/code-s-a-r-l/laravel-livewire-tables/thirdparty.css" rel="stylesheet" />', ltrim($assets->tableThirdPartyStyles()));
 
         $this->assertTrue($assets->hasRenderedRappsoftTableThirdPartyStyles);
     }
